@@ -1,27 +1,11 @@
 # Spout
 
-[![Latest Stable Version](https://poser.pugx.org/box/spout/v/stable)](https://packagist.org/packages/box/spout)
-[![Project Status](http://opensource.box.com/badges/active.svg)](http://opensource.box.com/badges)
-[![Build Status](https://travis-ci.org/box/spout.svg?branch=master)](https://travis-ci.org/box/spout)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/box/spout/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/box/spout/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/box/spout/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/box/spout/?branch=master)
-[![Total Downloads](https://poser.pugx.org/box/spout/downloads)](https://packagist.org/packages/box/spout)
-
-Spout is a PHP library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way.
+SpoutXL is based on spout, is a PHP library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way.
 Contrary to other file readers or writers, it is capable of processing very large files while keeping the memory usage really low (less than 3MB).
 
 Join the community and come discuss about Spout: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/box/spout?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Installation
-
-### Composer (recommended)
-
-Spout can be installed directly from [Composer](https://getcomposer.org/).
-
-Run the following command:
-```
-$ composer require box/spout
-```
 
 ### Manual installation
 
@@ -46,6 +30,10 @@ require_once '[PATH/TO]/src/Spout/Autoloader/autoload.php'; // don't forget to c
 
 
 ## Basic usage
+
+### New Features
+
+
 
 ### Reader
 
