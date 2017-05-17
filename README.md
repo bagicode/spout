@@ -33,7 +33,29 @@ require_once '[PATH/TO]/src/Spout/Autoloader/autoload.php'; // don't forget to c
 
 ### New Features
 
+Set Style from array:
+```php
+$s_title = (new StyleBuilder())
+           ->fromArray(['FontBold'=>true, 'FontSize'=>10, 'FontName'=>'Arial', 'HorzAlign'=>'center'])
+           ->build();
+```
 
+Set Column Width
+```php
+$writer->setSheetOptions([
+            'colwidth' => ['1'=>6, '3'=>15, '4'=>22, '6'=>18, '7'=>64, '8'=>15, 
+                        '9'=>13, '10'=>13, '11'=>33, '12'=>13, '13'=>21, '14'=>14,
+                        '15'=>15, '16'=>15, '17'=>15]
+        ]);
+```
+Merge column (colspan)
+```php
+ $writer->addRowWithStyle([
+                                ['value'=>'SUB TOTAL', 'colspan'=>11],
+                                '=SUM(L8:L'.($i+8).')',
+                                '','','','',''
+                                ],$s_body);
+```
 
 ### Reader
 
